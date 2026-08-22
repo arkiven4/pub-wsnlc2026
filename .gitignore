@@ -1,0 +1,5 @@
+# Regenerable caches: embeddings are hundreds of MB and 02 rebuilds them.
+result/*.npy
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
