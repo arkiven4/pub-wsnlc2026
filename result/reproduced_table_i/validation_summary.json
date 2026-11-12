@@ -1,0 +1,22 @@
+{
+  "metric_means": 120,
+  "exact_means": 120,
+  "exact_standard_deviations": 120,
+  "max_abs_mean_delta_pp": 0,
+  "encoders": [
+    "qwen",
+    "hear"
+  ],
+  "study_clips_per_encoder": 23638,
+  "uk_in_evaluation": false,
+  "qwen_proposed_auroc": [
+    86,
+    88,
+    89
+  ],
+  "hear_proposed_auroc": [
+    89,
+    89,
+    83
+  ]
+}

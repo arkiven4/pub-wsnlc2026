@@ -1,0 +1,13 @@
+db,tb_count,stage
+0,2773,Raw
+1,1279,Raw
+2,5087,Raw
+0,2043,CL Cleaning (prune_by_noise_rate)
+1,1083,CL Cleaning (prune_by_noise_rate)
+2,4820,CL Cleaning (prune_by_noise_rate)
+0,2237,CL Cleaning (confident_learning)
+1,1145,CL Cleaning (confident_learning)
+2,4879,CL Cleaning (confident_learning)
+0,1454,Proposed Cleaning (refine=False)
+1,562,Proposed Cleaning (refine=False)
+2,3268,Proposed Cleaning (refine=False)

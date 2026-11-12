@@ -1,0 +1,22 @@
+# Optional API documentation; run from the repository root.
+PROJECT_NAME           = "APSIPA 2026 cough label cleaning"
+OUTPUT_DIRECTORY       = docs/_build
+INPUT                  = docs scripts prep lib extract_embeddings.py paper_study.py run_pipeline.py \
+                         result/reproduced_table_i/table_i.md
+FILE_PATTERNS          = *.py *.md
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */docs/_build/* */__pycache__/* */prep/original/* */cad/*
+USE_MDFILE_AS_MAINPAGE  = docs/overview.md
+PYTHON_DOCSTRING       = NO
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+WARN_LOGFILE           = docs/_build/doxygen_warnings.log
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+HAVE_DOT               = NO
+QUIET                  = YES

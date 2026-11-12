@@ -1,0 +1,962 @@
+[
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "AUROC",
+    "mean": 64,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "AUROC",
+    "mean": 67,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "UAR",
+    "mean": 60,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "UAR",
+    "mean": 63,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "Sensitivity",
+    "mean": 54,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "Sensitivity",
+    "mean": 59,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "Specificity",
+    "mean": 66,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Original",
+    "metric": "Specificity",
+    "mean": 66,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "AUROC",
+    "mean": 63,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "AUROC",
+    "mean": 66,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "UAR",
+    "mean": 59,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "UAR",
+    "mean": 62,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "Sensitivity",
+    "mean": 54,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "Sensitivity",
+    "mean": 58,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "Specificity",
+    "mean": 65,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Random",
+    "metric": "Specificity",
+    "mean": 66,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "AUROC",
+    "mean": 79,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "AUROC",
+    "mean": 82,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "UAR",
+    "mean": 70,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "UAR",
+    "mean": 73,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "Sensitivity",
+    "mean": 64,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "Sensitivity",
+    "mean": 69,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "Specificity",
+    "mean": 76,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (PBNR)",
+    "metric": "Specificity",
+    "mean": 77,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "AUROC",
+    "mean": 75,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "AUROC",
+    "mean": 79,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "UAR",
+    "mean": 67,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "UAR",
+    "mean": 71,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "Sensitivity",
+    "mean": 61,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "Sensitivity",
+    "mean": 67,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "Specificity",
+    "mean": 73,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "CL (CL)",
+    "metric": "Specificity",
+    "mean": 75,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "AUROC",
+    "mean": 86,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "AUROC",
+    "mean": 89,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "UAR",
+    "mean": 76,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "UAR",
+    "mean": 80,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "Sensitivity",
+    "mean": 71,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "Sensitivity",
+    "mean": 78,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "Specificity",
+    "mean": 82,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CODA",
+    "method": "Proposed",
+    "metric": "Specificity",
+    "mean": 83,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "AUROC",
+    "mean": 66,
+    "std": 0
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "AUROC",
+    "mean": 64,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "UAR",
+    "mean": 59,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "UAR",
+    "mean": 59,
+    "std": 0
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "Sensitivity",
+    "mean": 45,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "Sensitivity",
+    "mean": 42,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "Specificity",
+    "mean": 74,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Original",
+    "metric": "Specificity",
+    "mean": 75,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "AUROC",
+    "mean": 66,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "AUROC",
+    "mean": 65,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "UAR",
+    "mean": 60,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "UAR",
+    "mean": 60,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "Sensitivity",
+    "mean": 48,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "Sensitivity",
+    "mean": 48,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "Specificity",
+    "mean": 72,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Random",
+    "metric": "Specificity",
+    "mean": 72,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "AUROC",
+    "mean": 75,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "AUROC",
+    "mean": 75,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "UAR",
+    "mean": 66,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "UAR",
+    "mean": 66,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "Sensitivity",
+    "mean": 53,
+    "std": 4
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "Sensitivity",
+    "mean": 56,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "Specificity",
+    "mean": 79,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (PBNR)",
+    "metric": "Specificity",
+    "mean": 77,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "AUROC",
+    "mean": 73,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "AUROC",
+    "mean": 73,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "UAR",
+    "mean": 65,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "UAR",
+    "mean": 65,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "Sensitivity",
+    "mean": 52,
+    "std": 5
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "Sensitivity",
+    "mean": 51,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "Specificity",
+    "mean": 77,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "CL (CL)",
+    "metric": "Specificity",
+    "mean": 78,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "AUROC",
+    "mean": 88,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "AUROC",
+    "mean": 89,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "UAR",
+    "mean": 77,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "UAR",
+    "mean": 80,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "Sensitivity",
+    "mean": 68,
+    "std": 5
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "Sensitivity",
+    "mean": 73,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "Specificity",
+    "mean": 86,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "CIDRZ",
+    "method": "Proposed",
+    "metric": "Specificity",
+    "mean": 87,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "AUROC",
+    "mean": 69,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "AUROC",
+    "mean": 60,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "UAR",
+    "mean": 64,
+    "std": 1
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "UAR",
+    "mean": 56,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "Sensitivity",
+    "mean": 72,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "Sensitivity",
+    "mean": 63,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "Specificity",
+    "mean": 56,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Original",
+    "metric": "Specificity",
+    "mean": 50,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "AUROC",
+    "mean": 68,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "AUROC",
+    "mean": 60,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "UAR",
+    "mean": 62,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "UAR",
+    "mean": 56,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "Sensitivity",
+    "mean": 76,
+    "std": 2
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "Sensitivity",
+    "mean": 65,
+    "std": 1
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "Specificity",
+    "mean": 49,
+    "std": 5
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Random",
+    "metric": "Specificity",
+    "mean": 47,
+    "std": 2
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "AUROC",
+    "mean": 75,
+    "std": 5
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "AUROC",
+    "mean": 79,
+    "std": 5
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "UAR",
+    "mean": 68,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "UAR",
+    "mean": 72,
+    "std": 4
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "Sensitivity",
+    "mean": 77,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "Sensitivity",
+    "mean": 75,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "Specificity",
+    "mean": 58,
+    "std": 4
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (PBNR)",
+    "metric": "Specificity",
+    "mean": 68,
+    "std": 5
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "AUROC",
+    "mean": 76,
+    "std": 4
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "AUROC",
+    "mean": 72,
+    "std": 4
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "UAR",
+    "mean": 68,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "UAR",
+    "mean": 66,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "Sensitivity",
+    "mean": 79,
+    "std": 3
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "Sensitivity",
+    "mean": 72,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "Specificity",
+    "mean": 56,
+    "std": 5
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "CL (CL)",
+    "metric": "Specificity",
+    "mean": 61,
+    "std": 3
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "AUROC",
+    "mean": 89,
+    "std": 5
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "AUROC",
+    "mean": 83,
+    "std": 6
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "UAR",
+    "mean": 80,
+    "std": 6
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "UAR",
+    "mean": 75,
+    "std": 5
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "Sensitivity",
+    "mean": 88,
+    "std": 4
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "Sensitivity",
+    "mean": 77,
+    "std": 4
+  },
+  {
+    "encoder": "qwen",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "Specificity",
+    "mean": 73,
+    "std": 8
+  },
+  {
+    "encoder": "hear",
+    "dataset": "TBScreen",
+    "method": "Proposed",
+    "metric": "Specificity",
+    "mean": 74,
+    "std": 6
+  }
+]

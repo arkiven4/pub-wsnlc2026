@@ -1,0 +1,121 @@
+encoder,dataset,method,metric,paper_mean,paper_std,local_mean,local_std,delta_pp
+qwen,CODA,Original,AUROC,64,1,64,1,0
+qwen,CODA,Original,UAR,60,1,60,1,0
+qwen,CODA,Original,Sensitivity,54,3,54,3,0
+qwen,CODA,Original,Specificity,66,1,66,1,0
+qwen,CODA,Random,AUROC,63,1,63,1,0
+qwen,CODA,Random,UAR,59,1,59,1,0
+qwen,CODA,Random,Sensitivity,54,2,54,2,0
+qwen,CODA,Random,Specificity,65,1,65,1,0
+qwen,CODA,CL (PBNR),AUROC,79,2,79,2,0
+qwen,CODA,CL (PBNR),UAR,70,2,70,2,0
+qwen,CODA,CL (PBNR),Sensitivity,64,2,64,2,0
+qwen,CODA,CL (PBNR),Specificity,76,1,76,1,0
+qwen,CODA,CL (CL),AUROC,75,2,75,2,0
+qwen,CODA,CL (CL),UAR,67,1,67,1,0
+qwen,CODA,CL (CL),Sensitivity,61,2,61,2,0
+qwen,CODA,CL (CL),Specificity,73,1,73,1,0
+qwen,CODA,Proposed,AUROC,86,2,86,2,0
+qwen,CODA,Proposed,UAR,76,3,76,3,0
+qwen,CODA,Proposed,Sensitivity,71,3,71,3,0
+qwen,CODA,Proposed,Specificity,82,3,82,3,0
+qwen,CIDRZ,Original,AUROC,66,0,66,0,0
+qwen,CIDRZ,Original,UAR,59,1,59,1,0
+qwen,CIDRZ,Original,Sensitivity,45,3,45,3,0
+qwen,CIDRZ,Original,Specificity,74,1,74,1,0
+qwen,CIDRZ,Random,AUROC,66,1,66,1,0
+qwen,CIDRZ,Random,UAR,60,1,60,1,0
+qwen,CIDRZ,Random,Sensitivity,48,2,48,2,0
+qwen,CIDRZ,Random,Specificity,72,1,72,1,0
+qwen,CIDRZ,CL (PBNR),AUROC,75,2,75,2,0
+qwen,CIDRZ,CL (PBNR),UAR,66,2,66,2,0
+qwen,CIDRZ,CL (PBNR),Sensitivity,53,4,53,4,0
+qwen,CIDRZ,CL (PBNR),Specificity,79,1,79,1,0
+qwen,CIDRZ,CL (CL),AUROC,73,1,73,1,0
+qwen,CIDRZ,CL (CL),UAR,65,2,65,2,0
+qwen,CIDRZ,CL (CL),Sensitivity,52,5,52,5,0
+qwen,CIDRZ,CL (CL),Specificity,77,1,77,1,0
+qwen,CIDRZ,Proposed,AUROC,88,3,88,3,0
+qwen,CIDRZ,Proposed,UAR,77,3,77,3,0
+qwen,CIDRZ,Proposed,Sensitivity,68,5,68,5,0
+qwen,CIDRZ,Proposed,Specificity,86,2,86,2,0
+qwen,TBScreen,Original,AUROC,69,1,69,1,0
+qwen,TBScreen,Original,UAR,64,1,64,1,0
+qwen,TBScreen,Original,Sensitivity,72,2,72,2,0
+qwen,TBScreen,Original,Specificity,56,2,56,2,0
+qwen,TBScreen,Random,AUROC,68,3,68,3,0
+qwen,TBScreen,Random,UAR,62,2,62,2,0
+qwen,TBScreen,Random,Sensitivity,76,2,76,2,0
+qwen,TBScreen,Random,Specificity,49,5,49,5,0
+qwen,TBScreen,CL (PBNR),AUROC,75,5,75,5,0
+qwen,TBScreen,CL (PBNR),UAR,68,3,68,3,0
+qwen,TBScreen,CL (PBNR),Sensitivity,77,3,77,3,0
+qwen,TBScreen,CL (PBNR),Specificity,58,4,58,4,0
+qwen,TBScreen,CL (CL),AUROC,76,4,76,4,0
+qwen,TBScreen,CL (CL),UAR,68,3,68,3,0
+qwen,TBScreen,CL (CL),Sensitivity,79,3,79,3,0
+qwen,TBScreen,CL (CL),Specificity,56,5,56,5,0
+qwen,TBScreen,Proposed,AUROC,89,5,89,5,0
+qwen,TBScreen,Proposed,UAR,80,6,80,6,0
+qwen,TBScreen,Proposed,Sensitivity,88,4,88,4,0
+qwen,TBScreen,Proposed,Specificity,73,8,73,8,0
+hear,CODA,Original,AUROC,67,1,67,1,0
+hear,CODA,Original,UAR,63,1,63,1,0
+hear,CODA,Original,Sensitivity,59,2,59,2,0
+hear,CODA,Original,Specificity,66,2,66,2,0
+hear,CODA,Random,AUROC,66,1,66,1,0
+hear,CODA,Random,UAR,62,1,62,1,0
+hear,CODA,Random,Sensitivity,58,1,58,1,0
+hear,CODA,Random,Specificity,66,1,66,1,0
+hear,CODA,CL (PBNR),AUROC,82,2,82,2,0
+hear,CODA,CL (PBNR),UAR,73,2,73,2,0
+hear,CODA,CL (PBNR),Sensitivity,69,2,69,2,0
+hear,CODA,CL (PBNR),Specificity,77,2,77,2,0
+hear,CODA,CL (CL),AUROC,79,2,79,2,0
+hear,CODA,CL (CL),UAR,71,2,71,2,0
+hear,CODA,CL (CL),Sensitivity,67,2,67,2,0
+hear,CODA,CL (CL),Specificity,75,1,75,1,0
+hear,CODA,Proposed,AUROC,89,3,89,3,0
+hear,CODA,Proposed,UAR,80,3,80,3,0
+hear,CODA,Proposed,Sensitivity,78,3,78,3,0
+hear,CODA,Proposed,Specificity,83,3,83,3,0
+hear,CIDRZ,Original,AUROC,64,1,64,1,0
+hear,CIDRZ,Original,UAR,59,0,59,0,0
+hear,CIDRZ,Original,Sensitivity,42,2,42,2,0
+hear,CIDRZ,Original,Specificity,75,3,75,3,0
+hear,CIDRZ,Random,AUROC,65,1,65,1,0
+hear,CIDRZ,Random,UAR,60,1,60,1,0
+hear,CIDRZ,Random,Sensitivity,48,2,48,2,0
+hear,CIDRZ,Random,Specificity,72,1,72,1,0
+hear,CIDRZ,CL (PBNR),AUROC,75,1,75,1,0
+hear,CIDRZ,CL (PBNR),UAR,66,1,66,1,0
+hear,CIDRZ,CL (PBNR),Sensitivity,56,3,56,3,0
+hear,CIDRZ,CL (PBNR),Specificity,77,2,77,2,0
+hear,CIDRZ,CL (CL),AUROC,73,1,73,1,0
+hear,CIDRZ,CL (CL),UAR,65,1,65,1,0
+hear,CIDRZ,CL (CL),Sensitivity,51,3,51,3,0
+hear,CIDRZ,CL (CL),Specificity,78,2,78,2,0
+hear,CIDRZ,Proposed,AUROC,89,2,89,2,0
+hear,CIDRZ,Proposed,UAR,80,2,80,2,0
+hear,CIDRZ,Proposed,Sensitivity,73,2,73,2,0
+hear,CIDRZ,Proposed,Specificity,87,2,87,2,0
+hear,TBScreen,Original,AUROC,60,2,60,2,0
+hear,TBScreen,Original,UAR,56,1,56,1,0
+hear,TBScreen,Original,Sensitivity,63,2,63,2,0
+hear,TBScreen,Original,Specificity,50,3,50,3,0
+hear,TBScreen,Random,AUROC,60,2,60,2,0
+hear,TBScreen,Random,UAR,56,1,56,1,0
+hear,TBScreen,Random,Sensitivity,65,1,65,1,0
+hear,TBScreen,Random,Specificity,47,2,47,2,0
+hear,TBScreen,CL (PBNR),AUROC,79,5,79,5,0
+hear,TBScreen,CL (PBNR),UAR,72,4,72,4,0
+hear,TBScreen,CL (PBNR),Sensitivity,75,3,75,3,0
+hear,TBScreen,CL (PBNR),Specificity,68,5,68,5,0
+hear,TBScreen,CL (CL),AUROC,72,4,72,4,0
+hear,TBScreen,CL (CL),UAR,66,3,66,3,0
+hear,TBScreen,CL (CL),Sensitivity,72,3,72,3,0
+hear,TBScreen,CL (CL),Specificity,61,3,61,3,0
+hear,TBScreen,Proposed,AUROC,83,6,83,6,0
+hear,TBScreen,Proposed,UAR,75,5,75,5,0
+hear,TBScreen,Proposed,Sensitivity,77,4,77,4,0
+hear,TBScreen,Proposed,Specificity,74,6,74,6,0

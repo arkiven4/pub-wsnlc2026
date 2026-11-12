@@ -3,3 +3,32 @@ result/*.npy
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Dataset audio: raw downloads and clips written by prep/ (not redistributable)
+data/raw/
+data/wavs/
+*.wav
+
+# Optional reference embedding artifacts (local/distributed separately)
+data/embeds/**/*.npz
+
+# Per-clip cleaning decisions are generated from stage02, not reference data
+data/cleaning/
+result/**/cleaning/
+
+# Dataset storage: keep only directory placeholders, never downloaded/generated data.
+/datasets/**
+!/datasets/**/
+!/datasets/**/.gitkeep
+
+# Generated source documentation
+/docs/_build/
+
+# Acoustic statistics cache written by scripts/06_acoustic_figures.py
+data/acoustic/
+
+
+# Local-only files: original preprocessing notebooks and unused analysis helpers
+prep/original/
+lib/fisher_split_v2.py
+lib/eval_metrics.py

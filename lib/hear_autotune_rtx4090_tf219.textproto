@@ -1,0 +1,79 @@
+version: 3
+results {
+  device: "CUDA: 8.9, Cores: 128, GPU clock: 2.565 GHz, Memory bandwidth: 1008 GB/s, L2 cache: 72 MB"
+  hlo: "{\n  tmp_0 = f32[1024,64,97]{2,1,0} parameter(0)\n  tmp_1 = f32[64,16,64,97]{3,2,1,0} bitcast(f32[1024,64,97]{2,1,0} tmp_0)\n  tmp_2 = f32[64,97,16,64]{3,2,1,0} transpose(f32[64,16,64,97]{3,2,1,0} tmp_1), dimensions={0,3,1,2}\n  tmp_3 = f32[6208,1024]{1,0} bitcast(f32[64,97,16,64]{3,2,1,0} tmp_2)\n  tmp_4 = f32[16,64,1024]{2,1,0} parameter(1)\n  tmp_5 = f32[1024,1024]{1,0} bitcast(f32[16,64,1024]{2,1,0} tmp_4)\n  ROOT tmp_6 = f32[6208,1024]{1,0} dot(f32[6208,1024]{1,0} tmp_3, f32[1024,1024]{1,0} tmp_5), lhs_contracting_dims={1}, rhs_contracting_dims={0}\n}"
+  result {
+    gemm {
+      algorithm: -1
+    }
+    run_time {
+      nanos: 254976
+    }
+  }
+}
+results {
+  device: "CUDA: 8.9, Cores: 128, GPU clock: 2.565 GHz, Memory bandwidth: 1008 GB/s, L2 cache: 72 MB"
+  hlo: "{\n  tmp_0 = f32[64,16,97,64]{3,2,1,0} parameter(0)\n  tmp_1 = f32[] constant({...})\n  tmp_2 = f32[64,16,97,64]{3,2,1,0} broadcast(f32[] tmp_1), dimensions={}\n  tmp_3 = f32[64,16,97,64]{3,2,1,0} multiply(f32[64,16,97,64]{3,2,1,0} tmp_0, f32[64,16,97,64]{3,2,1,0} tmp_2)\n  tmp_4 = f32[1024,97,64]{2,1,0} bitcast(f32[64,16,97,64]{3,2,1,0} tmp_3)\n  tmp_5 = f32[64,16,64,97]{3,2,1,0} parameter(1)\n  tmp_6 = f32[1024,64,97]{2,1,0} bitcast(f32[64,16,64,97]{3,2,1,0} tmp_5)\n  tmp_7 = f32[1024,97,97]{2,1,0} dot(f32[1024,97,64]{2,1,0} tmp_4, f32[1024,64,97]{2,1,0} tmp_6), lhs_batch_dims={0}, lhs_contracting_dims={2}, rhs_batch_dims={0}, rhs_contracting_dims={1}\n  ROOT tmp_8 = f32[64,16,97,97]{3,2,1,0} bitcast(f32[1024,97,97]{2,1,0} tmp_7)\n}"
+  result {
+    run_time {
+      nanos: 96256
+    }
+    triton {
+      block_m: 64
+      block_n: 32
+      block_k: 32
+      split_k: 1
+      num_stages: 1
+      num_warps: 4
+      num_ctas: 1
+    }
+  }
+}
+results {
+  device: "CUDA: 8.9, Cores: 128, GPU clock: 2.565 GHz, Memory bandwidth: 1008 GB/s, L2 cache: 72 MB"
+  hlo: "{\n  tmp_0 = f32[64,97,1024]{2,1,0} parameter(0)\n  tmp_1 = f32[1024]{0} parameter(1)\n  tmp_2 = f32[64,97,1024]{2,1,0} broadcast(f32[1024]{0} tmp_1), dimensions={2}\n  tmp_3 = f32[64,97,1024]{2,1,0} add(f32[64,97,1024]{2,1,0} tmp_0, f32[64,97,1024]{2,1,0} tmp_2)\n  tmp_4 = f32[6208,1024]{1,0} bitcast(f32[64,97,1024]{2,1,0} tmp_3)\n  tmp_5 = f32[1024,16,64]{2,1,0} parameter(2)\n  tmp_6 = f32[1024,1024]{1,0} bitcast(f32[1024,16,64]{2,1,0} tmp_5)\n  tmp_7 = f32[6208,1024]{1,0} dot(f32[6208,1024]{1,0} tmp_4, f32[1024,1024]{1,0} tmp_6), lhs_contracting_dims={1}, rhs_contracting_dims={0}\n  ROOT tmp_8 = f32[64,97,16,64]{3,2,1,0} bitcast(f32[6208,1024]{1,0} tmp_7)\n}"
+  result {
+    run_time {
+      nanos: 242688
+    }
+    triton {
+      block_m: 64
+      block_n: 128
+      block_k: 32
+      split_k: 1
+      num_stages: 4
+      num_warps: 4
+      num_ctas: 1
+    }
+  }
+}
+results {
+  device: "CUDA: 8.9, Cores: 128, GPU clock: 2.565 GHz, Memory bandwidth: 1008 GB/s, L2 cache: 72 MB"
+  hlo: "{\n  tmp_0 = f32[64,97,1024]{2,1,0} parameter(0)\n  tmp_1 = f32[1024]{0} parameter(1)\n  tmp_2 = f32[64,97,1024]{2,1,0} broadcast(f32[1024]{0} tmp_1), dimensions={2}\n  tmp_3 = f32[64,97,1024]{2,1,0} add(f32[64,97,1024]{2,1,0} tmp_0, f32[64,97,1024]{2,1,0} tmp_2)\n  tmp_4 = f32[6208,1024]{1,0} bitcast(f32[64,97,1024]{2,1,0} tmp_3)\n  tmp_5 = f32[1024,4096]{1,0} parameter(2)\n  ROOT tmp_6 = f32[6208,4096]{1,0} dot(f32[6208,1024]{1,0} tmp_4, f32[1024,4096]{1,0} tmp_5), lhs_contracting_dims={1}, rhs_contracting_dims={0}\n}"
+  result {
+    gemm {
+      algorithm: -1
+    }
+    run_time {
+      nanos: 807936
+    }
+  }
+}
+results {
+  device: "CUDA: 8.9, Cores: 128, GPU clock: 2.565 GHz, Memory bandwidth: 1008 GB/s, L2 cache: 72 MB"
+  hlo: "{\n  tmp_0 = f32[64,97,1024]{2,1,0} parameter(0)\n  tmp_1 = f32[1024]{0} parameter(1)\n  tmp_2 = f32[64,97,1024]{2,1,0} broadcast(f32[1024]{0} tmp_1), dimensions={2}\n  tmp_3 = f32[64,97,1024]{2,1,0} add(f32[64,97,1024]{2,1,0} tmp_0, f32[64,97,1024]{2,1,0} tmp_2)\n  tmp_4 = f32[6208,1024]{1,0} bitcast(f32[64,97,1024]{2,1,0} tmp_3)\n  tmp_5 = f32[1024,512]{1,0} parameter(2)\n  ROOT tmp_6 = f32[6208,512]{1,0} dot(f32[6208,1024]{1,0} tmp_4, f32[1024,512]{1,0} tmp_5), lhs_contracting_dims={1}, rhs_contracting_dims={0}\n}"
+  result {
+    run_time {
+      nanos: 242688
+    }
+    triton {
+      block_m: 64
+      block_n: 128
+      block_k: 32
+      split_k: 1
+      num_stages: 4
+      num_warps: 4
+      num_ctas: 1
+    }
+  }
+}

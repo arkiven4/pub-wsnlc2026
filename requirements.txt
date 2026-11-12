@@ -1,0 +1,21 @@
+# Tested Python 3.12 environment. Install a CUDA build of torch/torchaudio/torchvision.
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.3.2
+scikit-learn==1.7.2
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+tensorflow==2.19.0
+transformers==4.57.1
+cleanlab==2.7.1
+librosa==0.11.0
+soundfile==0.13.1
+safetensors==0.6.2
+huggingface-hub==0.36.0
+onnxruntime==1.23.2
+matplotlib==3.10.6
+seaborn==0.13.2
+tqdm==4.67.1
+joblib==1.5.2
+pillow==12.0.0

@@ -1,16 +1,10 @@
 """Standalone frame-level cough detection / segmentation (CAD).
 
 Depends only on numpy, scipy, librosa, soundfile, onnxruntime (+ the .onnx and
-config.json here). Runs the dense model to get a per-frame cough posterior
-(~10 ms/frame), smooths it, thresholds, and returns cough events. No sliding
-window, no peak hacks. Extracted segment audio is cut from the ORIGINAL
-untouched file (native sample rate + channels).
-
-Feature handling follows config.json "input_type":
-    "wav"    - model has a learnable frontend (LEAF) baked into the ONNX;
-               the raw waveform is fed directly.
-    "logmel" - legacy bundles: log-mel is computed here with librosa first.
-Old config.json without "input_type" defaults to "logmel".
+config.json here). Computes a log-mel once over the whole file, runs the dense
+model to get a per-frame cough posterior (~10 ms/frame), smooths it, thresholds,
+and returns cough events. No sliding window, no peak hacks. Extracted segment
+audio is cut from the ORIGINAL untouched file (native sample rate + channels).
 
 CLI:
     python infer.py input.wav
@@ -37,22 +31,12 @@ class CADDetector:
         self.session = ort.InferenceSession(
             os.path.join(model_dir, self.c["onnx_file"]), providers=["CPUExecutionProvider"])
         self.threshold = self.c["threshold"] if threshold is None else threshold
-        self.input_type = self.c.get("input_type", "logmel")   # old bundles: log-mel
-
-    def _norm_wav(self, wav):
-        """Waveform normalization steps, mirroring the training dataset."""
-        for step in self.c.get("normalization", []):
-            if step in ("max_wav_value", "peak_norm"):
-                peak = np.max(np.abs(wav))
-                if peak > 0:
-                    wav = wav / peak
-            elif step == "rms_norm":
-                wav = wav * (self.c.get("target_rms", 0.1) / (np.sqrt(np.mean(wav ** 2)) + 1e-8))
-            elif step == "cmvn_norm":
-                wav = (wav - wav.mean()) / (wav.std() + 1e-16)
-        return wav.astype(np.float32)
 
     def _logmel(self, wav):
+        if "max_wav_value" in self.c["normalization"]:
+            peak = np.max(np.abs(wav))
+            if peak > 0:
+                wav = wav / peak
         mel = librosa.feature.melspectrogram(
             y=wav, sr=self.c["sample_rate"], n_mels=self.c["n_mels"], n_fft=self.c["n_fft"],
             hop_length=self.c["hop_length"], win_length=self.c["win_length"],
@@ -62,17 +46,7 @@ class CADDetector:
     def posterior_from_wav(self, wav, chunk_sec=0.0):
         """Per-frame cough probability for an in-memory mono waveform at the model's
         sample rate. chunk_sec>0 splits the time axis (Pi / low-RAM); 0 = single pass."""
-        wav = self._norm_wav(np.asarray(wav, dtype=np.float32))
-
-        if self.input_type == "wav":                            # LEAF frontend inside ONNX
-            if chunk_sec <= 0:
-                return self._run(wav[None])[0]
-            spc = max(1, int(round(chunk_sec * self.c["sample_rate"])))
-            # chunk boundaries reset the frontend's conv/PCEN context (~1 frame edge blur)
-            return np.concatenate(
-                [self._run(wav[None, s:s + spc])[0] for s in range(0, len(wav), spc)])
-
-        feats = self._logmel(wav)                               # (n_mels, T)
+        feats = self._logmel(np.asarray(wav, dtype=np.float32))   # (n_mels, T)
         T = feats.shape[1]
         if chunk_sec <= 0:
             return self._run(feats[None])[0]

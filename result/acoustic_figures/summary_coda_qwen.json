@@ -1,0 +1,34 @@
+{
+  "dataset": "coda",
+  "encoder": "qwen",
+  "clips": 9279,
+  "groups": {
+    "Non-TB": 6506,
+    "Consistent TB": 1454,
+    "Ambiguous TB": 1319
+  },
+  "plotted": [
+    "mfcc_0_p10",
+    "mfcc_0_std",
+    "mfcc_0_p25"
+  ],
+  "top3_ranked": [
+    {
+      "feature": "mfcc_0_p10",
+      "auroc": 0.7447484197213365,
+      "cohen_d": -0.9263950192451729
+    },
+    {
+      "feature": "mfcc_0_std",
+      "auroc": 0.7353526381953638,
+      "cohen_d": 0.8985950672757562
+    },
+    {
+      "feature": "mfcc_0_p25",
+      "auroc": 0.7274015605529295,
+      "cohen_d": -0.8594037237510198
+    }
+  ],
+  "top3_equals_paper_features": true,
+  "note": "Descriptive AUROC on the cleaned groups; not held-out validation."
+}
