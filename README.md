@@ -308,3 +308,11 @@ If you use this code, please cite our paper:
 }
 ```
 
+
+## License
+
+Code and the cough detector model in this repository are released under the
+[Apache License 2.0](LICENSE). Copyright 2026 Institut Teknologi Sepuluh
+Nopember (ITS) and Nara Institute of Science and Technology (NAIST); see
+[NOTICE](NOTICE). Datasets and pretrained encoder weights are not covered by
+this licence and keep their own terms.
