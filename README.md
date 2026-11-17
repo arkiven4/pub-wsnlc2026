@@ -312,7 +312,9 @@ If you use this code, please cite our paper:
 ## License
 
 Code and the cough detector model in this repository are released under the
-[Apache License 2.0](LICENSE). Copyright 2026 Institut Teknologi Sepuluh
-Nopember (ITS) and Nara Institute of Science and Technology (NAIST); see
-[NOTICE](NOTICE). Datasets and pretrained encoder weights are not covered by
-this licence and keep their own terms.
+[MIT License](LICENSE). Copyright (c) 2026 Institut Teknologi Sepuluh Nopember
+(ITS) and Nara Institute of Science and Technology (NAIST). The cough detector
+in `cad/` follows the approach of Jansen van Vüren et al., "Cough activity
+detection for automatic tuberculosis screening", arXiv:2603.11241, 2026; its
+code and weights are our own. Datasets and pretrained encoder weights (Qwen3-Omni,
+HeAR) are not distributed here and keep their own terms.
